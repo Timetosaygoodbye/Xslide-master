@@ -186,7 +186,8 @@ export default class Viewer extends React.Component {
     let focus_x=sx+sw/2
     let focus_y=sy+sh/2
     let focus_zoom=this._zoom
-    let focus_time=Date()
+    let tmp_data=new Date();
+    let focus_time=tmp_data.getTime();
     let dict={
       'X': focus_x,
       'Y': focus_y,

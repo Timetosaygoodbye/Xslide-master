@@ -29,3 +29,9 @@ Xslide would not exist without them:
 [ ] adapt MacOS
 
 [ ] adapt Linux
+
+## 说明
+第一步： ./Client 下为网页代码，修改完毕后在 ./Client 下命令行运行npm run build，会在./Electron/render 下生成打包好的网页
+第二步： ./Electron 下为生成可运行程序的代码，运行完第一步后，在./Electron 下命令行运行npm run dist，会在./Electron/dist下生成安装包
+
+此项目使用的是Node.js v10，版本不对会出错。并且可能在运行时出现依赖包报错，这时候去package.json里面升级一下出错的包的版本应该就行了。
